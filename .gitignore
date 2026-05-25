@@ -1,0 +1,6 @@
+.vscode
+
+.taskfile
+
+# Ignore all files in the dist directory
+dist/
