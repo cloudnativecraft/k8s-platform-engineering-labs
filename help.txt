@@ -1,0 +1,13 @@
+using kind
+
+create cluster with kind 
+
+kind create cluster --name lab-devops
+
+kubectl cluster-info --context kind-lab-devops
+
+create deployment :
+kubectl create deployment app --image=nginx --replicas=2
+The result is : deployment --> replicatset ---> pod
+
+When you want scale pods : kubectl scale deployment app --replicas=10
